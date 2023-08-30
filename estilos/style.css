@@ -1,0 +1,17 @@
+
+.navbar-toggler-icon {
+    margin: auto;
+}
+
+.bi {
+    font-size: 2em;
+}
+.bi:hover {
+    color: #053d81;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
