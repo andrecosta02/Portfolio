@@ -27,80 +27,9 @@
     <!--Link do CSS personalizado deve ficar logo abaixo do link do Bootstrap-->
     <link rel="stylesheet" href="estilos/style.css">
 </head>
-<body>
+<body id="top">
 
-  <div id="carouselExampleIndicators" class="carousel slide">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="row row-cols-2 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card">
-              <img src="img/htmlImg.jpg" class="card-img-top" alt="Imagem com Código em HTML">
-              <div class="card-body">
-                <h5 class="card-title">HTML</h5>
-                <p class="card-text">Possuo habilidade intermediária com HTML.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="img/cssImg.jpg" class="card-img-top" alt="Imagem com Código em CSS">
-              <div class="card-body">
-                <h5 class="card-title">CSS</h5>
-                <p class="card-text">Possuo habilidade intermediária com CSS.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <img src="img/htmlImg.jpg" class="d-block w-100" alt="img/htmlImg.jpg">
-      </div>
-
-      <div class="carousel-item">
-        <img src="img/htmlImg.jpg" class="d-block w-100" alt="img/htmlImg.jpg">
-      </div>
-      
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-  <!-- <nav class="navbar" style="background-color: rgb(106, 163, 203);">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="img/andreCosta02-removebg.png" alt="logoSite"  width="300"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Minha experiência</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contacts">Contatos</a>
-          </li>    
-        </ul>
-      </div>
-    </div>
-  </nav> -->
-
-  <nav class="navbar navbar-expand-lg bg-body-tertiary"  >
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid" style="background-color: rgb(106, 163, 203);">
       <a class="navbar-brand" href="#"><img src="img/andreCosta02-removebg.png" alt="logoSite"  width="300"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -111,14 +40,16 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
           <a class="nav-link" href="#">Minha experiência</a>
           <a class="nav-link" href="#">Contato</a>
-          <a class="nav-link disabled" aria-disabled="true">Experiências</a>
+          <!-- <a class="nav-link disabled" aria-disabled="false">Experiências</a> -->
+          <a class="nav-link enable">Experiências</a>
+
         </div>
       </div>
     </div>
   </nav>
 
 
-  <div class="container-sm" id="top">
+  <div class="container-sm">
     <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est vel quod facilis eaque cum similique delectus at molestiae ab temporibus? Vero dolores numquam neque soluta ut omnis. Quos, delectus sapiente? Illum dignissimos vel autem animi eaque laboriosam facere repellat at praesentium. Totam, odit officiis accusantium soluta omnis rem, doloremque dolor, esse hic optio dignissimos perspiciatis exercitationem? Error aperiam sapiente sunt!</span></p>
 
     <p><span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At in, cum odit quidem tempora suscipit dignissimos, culpa optio impedit beatae deserunt facere a commodi numquam? Magni eum vel est culpa!</span><span>Repellendus sapiente aspernatur vitae eligendi a accusamus neque quia veniam blanditiis at accusantium quae ipsum dignissimos ullam, aut repudiandae totam quam architecto veritatis quas aperiam recusandae sed itaque nemo! Accusamus.</span></p>
@@ -281,10 +212,47 @@
       </div>
     </div>
 
-    <a href="#top" class="btn btn-primary">Voltar para o Topo</a>
-  </div>
+    <form action="">
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+      </div>
+    </form>
+    
 
-          
+    <div class="container">
+      <h1>Entre em contato comigo</h1>
+      <form target="_blank" action="https://formsubmit.co/andrevgcosta02@gmail.com" method="POST">
+        <input type="hidden" name="_next" value="#">
+        <input type="hidden" name="_subject" value="Form do Portfólio de André Costa">
+        <input type="hidden" name="_captcha" value="false">
+        <div class="form-group">
+          <div class="form-row">
+            <div class="col">
+              <input type="text" name="Name" class="form-control" placeholder="Full Name" required>
+            </div>
+            <div class="col">
+              <input type="email" name="Email" class="form-control" placeholder="Email Address" required>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Your Message" class="form-control" name="Mensagem" rows="10" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+      </form>
+    </div>
+    
+    
+    <a href="#top" class="btn btn-primary">Voltar para o Topo</a>
+  
+  
+  </div>
+  
 
   <script src="scripts/script.js"></script>
 </body>
