@@ -212,7 +212,7 @@
       </div>
     </div>
 
-    <form action="">
+    <!-- <form action="">
       <div class="form-floating mb-3">
         <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
         <label for="floatingInput">Email address</label>
@@ -221,7 +221,7 @@
         <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
         <label for="floatingPassword">Password</label>
       </div>
-    </form>
+    </form> -->
     
 
     <div class="container">
@@ -230,19 +230,45 @@
         <input type="hidden" name="_next" value="#">
         <input type="hidden" name="_subject" value="Form do Portfólio de André Costa">
         <input type="hidden" name="_captcha" value="false">
+
+        <div class="form-floating mb-3">
+          <input type="text" name="Name" id="nameInput" class="form-control" placeholder="" required>
+          <label for="nameInput">Nome <span id="exForm">Ex: André Victor Gonçalves Costa</span></label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input type="Email" name="Email" id="emailInput" class="form-control" placeholder="" required>
+          <label for="emailInput">Email <span id="exForm">Ex: exemplo@email.com</span></label>
+        </div>
+        
+        <div class="form-floating mb-3">
+          <input type="tel" name="Telefone" id="telInput" class="form-control" placeholder="">
+          <label for="floatingInput">Telefone <span id="exForm">Ex: (99)99999-9999</span></label> 
+        </div>
+
+        <div class="mb-3">
+          <p>Você permite contato através de ligação ou Whatsapp? <input type="checkbox" name="contactForm" id="contactForm"> </p>
+          
+        </div>
+        
+        
         <div class="form-group">
+          <textarea placeholder="Sua Mensagem" class="form-control" name="Mensagem" rows="10" required></textarea>
+        </div>
+
+        <!-- <div class="form-group">
           <div class="form-row">
             <div class="col">
               <input type="text" name="Name" class="form-control" placeholder="Full Name" required>
             </div>
+
             <div class="col">
               <input type="email" name="Email" class="form-control" placeholder="Email Address" required>
             </div>
           </div>
-        </div>
-        <div class="form-group">
-          <textarea placeholder="Your Message" class="form-control" name="Mensagem" rows="10" required></textarea>
-        </div>
+        </div> -->
+
+
         <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
       </form>
     </div>
