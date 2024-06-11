@@ -1,0 +1,33 @@
+/* * {
+    padding: 0px;
+    margin: 0px;
+} */
+.navbar-toggler-icon {
+    margin: auto;
+}
+
+.bi {
+    font-size: 2em;
+}
+.bi:hover {
+    color: #053d81;  
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#exForm {
+    /* color: rgba(128, 128, 128, 0.661); */
+    font-size: .7em;
+}
+
+#contactForm {
+    color: #053d81;
+    fill: rgb(255, 64, 0);
+
+    
+    color: rgb(255,255,255);
+    color: rgb(11, 10, 24);
+}

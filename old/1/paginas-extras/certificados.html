@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Certificados</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        .backToHome {
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+        }
+
+        .backToTop {
+            position: fixed;
+            right: 10px;
+            bottom: 50px;
+        }
+
+        #conteudo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10px;
+            max-width: 1090px;
+            margin: 0 auto;
+        }
+
+        .certificado {
+            width: 200px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px black;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 10px;
+        }
+
+        .certificado:hover {
+            transform: scale(1.2);
+            box-shadow: 5px 5px 15px black;
+        }
+
+        @media screen and (max-width: 600px) {
+            .certificado {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+
+        @media screen and (min-width: 601px) {
+            #conteudo {
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        }
+
+        @media screen and (min-width: 801px) {
+            .certificado {
+                flex-basis: calc(25% - 40px);
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Meus Certificados</h1>
+    <p>Clique no Certificado para abrir em PDF</p>
+    <section id="conteudo">
+
+        <a href="https://drive.google.com/file/d/1wqMDmCxGrM12PKI9rGbtObsfoBrwvjSS/view?usp=sharing" target="_blank"><img src="../imagens/Mod01-HTML-CSS.png" alt="Mod01-HTML-CSS.png" class="certificado"></a>
+
+        <a href="https://drive.google.com/file/d/1NsC3G0ftXGcE0h_YKQjGGl5KZaMJJuOu/view?usp=sharing" target="_blank"><img src="../imagens/Mod01-HTML-CSS.png" alt="Mod01-HTML-CSS.png" class="certificado"></a>
+        
+        <a href="https://drive.google.com/file/d/1wqMDmCxGrM12PKI9rGbtObsfoBrwvjSS/view?usp=sharing" target="_blank"><img src="../imagens/Mod01-HTML-CSS.png" alt="Mod01-HTML-CSS.png" class="certificado"></a>
+
+        <a href="https://drive.google.com/file/d/1NsC3G0ftXGcE0h_YKQjGGl5KZaMJJuOu/view?usp=sharing" target="_blank"><img src="../imagens/Mod01-HTML-CSS.png" alt="Mod01-HTML-CSS.png" class="certificado"></a>
+
+        <a href="https://drive.google.com/file/d/1wqMDmCxGrM12PKI9rGbtObsfoBrwvjSS/view?usp=sharing" target="_blank"><img src="../imagens/Mod01-HTML-CSS.png" alt="Mod01-HTML-CSS.png" class="certificado"></a>
+
+        <a href="https://drive.google.com/file/d/1NsC3G0ftXGcE0h_YKQjGGl5KZaMJJuOu/view?usp=sharing" target="_blank"><img src="../imagens/Mod01-HTML-CSS.png" alt="Mod01-HTML-CSS.png" class="certificado"></a>
+        
+        <a href="https://drive.google.com/file/d/1wqMDmCxGrM12PKI9rGbtObsfoBrwvjSS/view?usp=sharing" target="_blank"><img src="../imagens/Mod01-HTML-CSS.png" alt="Mod01-HTML-CSS.png" class="certificado"></a>
+
+        <a href="https://drive.google.com/file/d/1NsC3G0ftXGcE0h_YKQjGGl5KZaMJJuOu/view?usp=sharing" target="_blank"><img src="../imagens/Mod01-HTML-CSS.png" alt="Mod01-HTML-CSS.png" class="certificado"></a>
+
+        <a href="https://drive.google.com/file/d/1wqMDmCxGrM12PKI9rGbtObsfoBrwvjSS/view?usp=sharing" target="_blank"><img src="../imagens/Mod01-HTML-CSS.png" alt="Mod01-HTML-CSS.png" class="certificado"></a>
+
+        <a href="https://drive.google.com/file/d/1NsC3G0ftXGcE0h_YKQjGGl5KZaMJJuOu/view?usp=sharing" target="_blank"><img src="../imagens/Mod01-HTML-CSS.png" alt="Mod01-HTML-CSS.png" class="certificado"></a>
+        
+        <a href="https://drive.google.com/file/d/1wqMDmCxGrM12PKI9rGbtObsfoBrwvjSS/view?usp=sharing" target="_blank"><img src="../imagens/Mod01-HTML-CSS.png" alt="Mod01-HTML-CSS.png" class="certificado"></a>
+
+        <a href="https://drive.google.com/file/d/1NsC3G0ftXGcE0h_YKQjGGl5KZaMJJuOu/view?usp=sharing" target="_blank"><img src="../imagens/Mod01-HTML-CSS.png" alt="Mod01-HTML-CSS.png" class="certificado"></a>
+
+        
+    </section>
+    
+
+    <a href="../index.html" class="backToHome"><img src="https://icons.iconarchive.com/icons/iconsmind/outline/64/Back-2-2-icon.png" width="32" height="32"></a>
+
+    <a href="#" class="backToTop" onclick="scrollToTop()"><img src="https://icons.iconarchive.com/icons/aniket-suvarna/box-regular/32/bx-arrow-to-top-icon.png" width="32" height="32"></a>
+
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
