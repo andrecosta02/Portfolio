@@ -29,6 +29,55 @@ a:hover {
     text-decoration: underline;
 }
 
+.square-img {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Defina o tamanho desejado */
+    max-height: 300px; /* Defina o tamanho desejado */
+    object-fit: cover;
+}
+
+.carousel-item .square-img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-item .square-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-item .square-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item .square-img p {
+    margin-top: 10px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    z-index: 1;
+}
+
+.carousel-item .col-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-item .col-4 p {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+.carousel-indicators {
+    bottom: -30px; /* Ajuste aqui conforme necessário */
+}
+
+
 @media (max-width: 768px) {
     .my-photo {
         width: 100px;
